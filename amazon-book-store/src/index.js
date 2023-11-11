@@ -24,6 +24,10 @@ const Header = ()=>{
 const BookList = ()=>{
   return(
     <section className='book-list'>
+      {/* <Book image = {book1.img} name= {book1.name} author= {book1.author} ratings = {book1.ratings} price = {book1.price}>
+        <button>Child button</button>
+      </Book> */}
+
       <Book image = {book1.img} name= {book1.name} author= {book1.author} ratings = {book1.ratings} price = {book1.price}/>
 
       <Book image = {book2.img} name= {book2.name} author= {book2.author} ratings = {book2.ratings} price = {book2.price}/>
@@ -51,14 +55,15 @@ const BookList = ()=>{
   )
 }
 
-const Book = (props)=>{
+const Book = ({image, name, author, ratings, price, children})=>{
   return(
     <article className='book'>
-      <img className='image' src={props.image} alt={props.name} />
-      <h2 className='name'>{props.name}</h2>
-      <h3 className='author'>&#62; {props.author}</h3>
-      <h5 className='rating'>Ratings: {props.ratings}</h5>
-      <h4 className='price'>${props.price}</h4>
+      <img className='image' src={image} alt={name} />
+      <h2 className='name'>{name}</h2>
+      <h3 className='author'>&#62; {author}</h3>
+      <h5 className='rating'>Ratings: {ratings}</h5>
+      <h4 className='price'>${price}</h4>
+      {/* {children} */}
     </article>
   );
 }
