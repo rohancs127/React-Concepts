@@ -54,9 +54,8 @@ const BookList = ()=>{
 
       {
         books.map((book)=>{
-          const {image, name, author, ratings, price, id} = book;
           return(
-            <Book book={book} key={id}/>
+            <Book book={book} key={book.id}/>
           )
         })
       }
@@ -67,7 +66,7 @@ const BookList = ()=>{
 
 const Book = (props)=>{
   const {image, name, author, ratings, price} = props.book;
-  console.log(props);
+  // console.log(props);
   return(
     <article className='book'>
       <img className='image' src={image} alt={name} />
