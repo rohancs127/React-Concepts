@@ -28,7 +28,7 @@ const BookList = ()=>{
         <button>Child button</button>
       </Book> */}
 
-      <Book image = {book1.img} name= {book1.name} author= {book1.author} ratings = {book1.ratings} price = {book1.price}/>
+      {/* <Book image = {book1.img} name= {book1.name} author= {book1.author} ratings = {book1.ratings} price = {book1.price}/>
 
       <Book image = {book2.img} name= {book2.name} author= {book2.author} ratings = {book2.ratings} price = {book2.price}/>
 
@@ -50,12 +50,24 @@ const BookList = ()=>{
 
       <Book image = {book11.img} name= {book11.name} author= {book11.author} ratings = {book11.ratings} price = {book11.price}/>
 
-      <Book image = {book12.img} name= {book12.name} author= {book12.author} ratings = {book12.ratings} price = {book12.price}/>
+      <Book image = {book12.img} name= {book12.name} author= {book12.author} ratings = {book12.ratings} price = {book12.price}/> */}
+
+      {
+        books.map((book)=>{
+          const {image, name, author, ratings, price, id} = book;
+          return(
+            <Book book={book} key={id}/>
+          )
+        })
+      }
+
     </section>
   )
 }
 
-const Book = ({image, name, author, ratings, price, children})=>{
+const Book = (props)=>{
+  const {image, name, author, ratings, price} = props.book;
+  console.log(props);
   return(
     <article className='book'>
       <img className='image' src={image} alt={name} />
