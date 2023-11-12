@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {book1, book2, book3, book4, book5, book6, book7, book8, book9, book10, book11, book12} from './books';
+import {books} from './books';
 
 const Page = ()=>{
   return(
