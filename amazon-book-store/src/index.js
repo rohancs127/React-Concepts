@@ -64,12 +64,17 @@ const BookList = ()=>{
   )
 }
 
+
+
 const Book = (props)=>{
   const {image, name, author, ratings, price} = props.book;
+  const handleBookClick = ()=>{
+    alert(`'${name}' written by ${author}`);
+  }
   // console.log(props);
   return(
-    <article className='book'>
-      <img className='image' src={image} alt={name} />
+    <article className='book' onClick={handleBookClick}>
+      <img className='image' src={image} alt={name}/>
       <h2 className='name'>{name}</h2>
       <h3 className='author'>&#62; {author}</h3>
       <h5 className='rating'>Ratings: {ratings}</h5>
