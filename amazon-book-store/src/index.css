@@ -72,3 +72,19 @@
     color: rgb(193, 68, 0);
     text-decoration: underline;
 }
+
+
+.add-to-cart{
+    background-color: orange;
+    border: none;
+    padding: 5px 20px 5px 20px;
+    width: 60%;
+    align-self: center;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.add-to-cart:hover{
+    background-color: rgb(255, 183, 0);
+}
