@@ -1,6 +1,19 @@
+import image1 from './images/book1.jpg';
+import image2 from './images/book2.jpg';
+import image3 from './images/book3.jpg';
+import image4 from './images/book4.jpg';
+import image5 from './images/book5.jpg';
+import image6 from './images/book6.jpg';
+import image7 from './images/book7.jpg';
+import image8 from './images/book8.jpg';
+import image9 from './images/book9.jpg';
+import image10 from './images/book10.jpg';
+import image11 from './images/book11.jpg';
+import image12 from './images/book12.jpg';
+
 const books = [
   {
-    image: "https://m.media-amazon.com/images/I/31kNMP-6n8L._SY445_SX342_.jpg",
+    image: image1,
     name: "The Woman in Me",
     author: "Britney Spears",
     ratings: 4.5,
@@ -9,7 +22,7 @@ const books = [
   },
 
   {
-    image: "https://m.media-amazon.com/images/I/51j8bRH5sDL._SY445_SX342_.jpg",
+    image: image2,
     name: "Fourth Wing (The Empyrean, 1)",
     author: "Rebecca Yarros",
     ratings: 4.8,
@@ -18,7 +31,7 @@ const books = [
   },
 
   {
-    image: "https://m.media-amazon.com/images/I/917Bc9C1MlL._SY466_.jpg",
+    image: image3,
     name: "Iron Flame (The Empyrean, 2)",
     author: "Rebecca Yarros",
     ratings: 4.6,
@@ -27,7 +40,7 @@ const books = [
   },
 
   {
-    image: "https://m.media-amazon.com/images/I/81v6oWQZj1L._SY466_.jpg",
+    image: image4,
     name: "How to Catch a Turkey",
     author: "Adam Wallace",
     ratings: 4.9,
@@ -36,7 +49,7 @@ const books = [
   },
 
   {
-    image: "https://m.media-amazon.com/images/I/41vhM79jpQL._SY445_SX342_.jpg",
+    image: image5,
     name: "My Name Is Barbra",
     author: "Barbra Streisand",
     ratings: 4.7,
@@ -45,7 +58,7 @@ const books = [
   },
 
   {
-    image: "https://m.media-amazon.com/images/I/41hc-E-3b3L._SY445_SX342_.jpg",
+    image: image6,
     name: "The Great Disappearance",
     author: "Dr. David Jeremiah",
     ratings: 4.7,
@@ -54,7 +67,7 @@ const books = [
   },
 
   {
-    image: "https://m.media-amazon.com/images/I/51Md5DMsP1L._SY445_SX342_.jpg",
+    image: image7,
     name: "No Brainer",
     author: "Jeff Kinney",
     ratings: 4.8,
@@ -63,7 +76,7 @@ const books = [
   },
 
   {
-    image: "https://m.media-amazon.com/images/I/41c-ohcwepL._SY445_SX342_.jpg",
+    image: image8,
     name: "Friends, Lovers, and the Big Terrible Thing",
     author: "Matthew Perry",
     ratings: 4.5,
@@ -72,7 +85,7 @@ const books = [
   },
 
   {
-    image: "https://m.media-amazon.com/images/I/51ejJSbOTBL._SY445_SX342_.jpg",
+    image: image9,
     name: "Killers of the Flower Moon",
     author: "David Grann",
     ratings: 4.4,
@@ -81,7 +94,7 @@ const books = [
   },
 
   {
-    image: "https://m.media-amazon.com/images/I/61Bhqhx2BzL._SX342_SY445_.jpg",
+    image: image10,
     name: "How to Catch a Snowman",
     author: "Adam Wallace",
     ratings: 4.8,
@@ -90,7 +103,7 @@ const books = [
   },
 
   {
-    image: "https://m.media-amazon.com/images/I/51RYHlz+7OL._SY445_SX342_.jpg",
+    image: image11,
     name: "The Ballad of Songbirds and Snakes",
     author: "Suzanne Collins",
     ratings: 4.6,
@@ -99,7 +112,7 @@ const books = [
   },
 
   {
-    image: "https://m.media-amazon.com/images/I/81X1plzH9DL._SY342_.jpg",
+    image: image12,
     name: "Taylor Swift",
     author: "Wendy Loggia",
     ratings: 4.9,
