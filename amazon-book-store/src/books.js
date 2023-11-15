@@ -1,4 +1,4 @@
-export const books = [
+const books = [
   {
     image: "https://m.media-amazon.com/images/I/31kNMP-6n8L._SY445_SX342_.jpg",
     name: "The Woman in Me",
@@ -107,3 +107,5 @@ export const books = [
     id:12
   }
 ]
+
+export default books;
