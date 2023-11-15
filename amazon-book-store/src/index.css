@@ -73,6 +73,18 @@
     text-decoration: underline;
 }
 
+.rank{
+    color: white;
+    background-color: rgb(193, 68, 0);
+    margin-left: -6%;
+    margin-top: -11%;
+    width: 30px;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+}
+
 
 /* .add-to-cart{
     background-color: orange;
