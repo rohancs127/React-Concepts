@@ -22,6 +22,10 @@ const Header = ()=>{
 }
 
 const BookList = ()=>{
+  const getBook=(id)=>{
+    const book = books.find((book)=> book.id===id)
+    console.log(book);
+  }
   return(
     <section className='book-list'>
       {/* <Book image = {book1.img} name= {book1.name} author= {book1.author} ratings = {book1.ratings} price = {book1.price}>
@@ -55,7 +59,7 @@ const BookList = ()=>{
       {
         books.map((book)=>{
           return(
-            <Book book={book} key={book.id}/>
+            <Book book={book} key={book.id} getBook = {getBook(book.id)}/>
           )
         })
       }
