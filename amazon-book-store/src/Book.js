@@ -1,5 +1,6 @@
 const Book = (props)=>{
-    const {image, name, author, ratings, price, id} = props.book;
+    const {image, name, author, ratings, price} = props.book;
+    const {rank} = props;
     const handleBookClick = ()=>{
       alert(`'${name}' written by ${author}`);
     }
@@ -10,7 +11,7 @@ const Book = (props)=>{
     // console.log(props);
     return(
       <article className='book'>
-        <div className="rank">#{id}</div>
+        <div className="rank">#{rank+1}</div>
         <img className='image' src={image} alt={name} onClick={handleBookClick}/>
         <h2 className='name' onClick={handleBookClick}>{name}</h2>
         <h3 className='author'>&#62; {author}</h3>

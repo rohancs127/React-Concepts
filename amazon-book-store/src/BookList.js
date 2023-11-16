@@ -37,9 +37,9 @@ const BookList = ()=>{
         <Book image = {book12.img} name= {book12.name} author= {book12.author} ratings = {book12.ratings} price = {book12.price}/> */}
   
         {
-          books.map((book)=>{
+          books.map((book, index)=>{
             return(
-              <Book book={book} key={book.id} />
+              <Book book={book} key={book.id} rank = {index} />
             )
           })
         }
