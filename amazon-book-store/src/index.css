@@ -39,7 +39,7 @@
     border: solid 1px rgb(215, 215, 215);
     overflow: hidden;
     min-width: 180px;
-    max-width: 200px;
+    max-width:200px;
 }
 
 .book-list{
