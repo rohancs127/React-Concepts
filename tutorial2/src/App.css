@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+h1{
+  color: aqua;
+  transition: 1s;
+}
+h1:hover{
+  color: black;
+}
