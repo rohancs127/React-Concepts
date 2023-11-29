@@ -10,8 +10,12 @@ const UseEffectBasics = () => {
   sayHello();
 
   useEffect(()=>{
-    console.log('this is use effect');
-  },[])
+    console.log('this is the first use effect');
+  },[value])
+
+  useEffect(()=>{
+    console.log('this is the second use effect');
+  },[secondValue])
 
   return (
     <div>
