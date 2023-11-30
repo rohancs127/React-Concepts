@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 const url = 'https://api.github.com/users';
 
 const FetchData = () => {
-  const [user, setUser] = useState([])
+  const [users, setUsers] = useState([])
 
   useEffect(()=>{
     console.log('hello');
@@ -12,6 +12,7 @@ const FetchData = () => {
       try {   
       const response  = await fetch(url);
       const users = await response.json();
+      setUsers(users)
       console.log(users);
       // console.log(response);
       } catch (error) {
@@ -24,7 +25,10 @@ const FetchData = () => {
   }, []);
   return (
     <section>
-      <h2>fetch data example</h2>
+      <h2>Github Users</h2>
+      <ul className="users">{users.map((user)=>{
+        return <li>{user.login}</li>
+      })}</ul>
     </section>
   );
 };
