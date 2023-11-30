@@ -7,12 +7,13 @@
 
 import UseEffectBasics from "./tutorial/02-useEffect/starter/02-useEffect-basics";
 import MultipleEffects from "./tutorial/02-useEffect/starter/03-multiple-effects";
+import FetchData from "./tutorial/02-useEffect/starter/04-fetch-data";
 
 function App() {
   return (
     <div className='container'>
       {/* <UseStateBasics/> */}
-      <MultipleEffects/>
+      <FetchData/>
     </div>
   );
 }
