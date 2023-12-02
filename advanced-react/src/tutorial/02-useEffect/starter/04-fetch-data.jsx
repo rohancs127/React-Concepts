@@ -27,7 +27,14 @@ const FetchData = () => {
     <section>
       <h2>Github Users</h2>
       <ul className="users">{users.map((user)=>{
-        return <li>{user.login}</li>
+        const {id, login, avatar_url, html_url}  =user
+        return <li key={id}>
+          <img src={avatar_url} alt={login}></img>
+          <div>
+            <h5>{login}</h5>
+            <a href={html_url}>Profile</a>
+            </div>
+        </li>
       })}</ul>
     </section>
   );
