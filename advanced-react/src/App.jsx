@@ -10,12 +10,13 @@ import MultipleEffects from "./tutorial/02-useEffect/starter/03-multiple-effects
 import FetchData from "./tutorial/02-useEffect/starter/04-fetch-data";
 
 import MultipleReturnsBasics from "./tutorial/03-conditional-rendering/starter/01-multiple-returns-basics";
+import MultipleReturnsFetchData from "./tutorial/03-conditional-rendering/starter/02-multiple-returns-fetch-data";
 
 function App() {
   return (
     <div className='container'>
       {/* <UseStateBasics/> */}
-      <MultipleReturnsBasics/>
+      <MultipleReturnsFetchData/>
     </div>
   );
 }
