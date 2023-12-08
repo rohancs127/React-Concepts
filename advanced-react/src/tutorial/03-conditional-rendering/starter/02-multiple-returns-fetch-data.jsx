@@ -21,10 +21,10 @@ const MultipleReturnsFetchData = () => {
       setIsError(true)
     }
 
-    // setIsLoading(false);
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
+    setIsLoading(false);
+    // setTimeout(() => {
+    //   setIsLoading(false);
+    // }, 3000);
     }
 
 
