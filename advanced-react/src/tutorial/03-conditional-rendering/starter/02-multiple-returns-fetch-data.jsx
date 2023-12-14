@@ -48,12 +48,13 @@ const MultipleReturnsFetchData = () => {
     return <h1>Error!! Unable to load</h1>
   }
 
+  const {avatar_url, login, company, bio} = user;
   return <section>
     <h2>Fetch Data </h2>
-    <img src={user.avatar_url} style={{height:'10rem', borderRadius:'1.5rem'}}></img>
-    <h2>{user.login}</h2>
-    <h4>Works at {user.company}</h4>
-    <h5>{user.bio}</h5>
+    <img src={avatar_url} style={{height:'10rem', borderRadius:'1.5rem'}}></img>
+    <h2>{login}</h2>
+    <h4>Works at {company}</h4>
+    <h5>{bio}</h5>
   </section>;
 };
 export default MultipleReturnsFetchData;
