@@ -12,12 +12,13 @@ import FetchData from "./tutorial/02-useEffect/starter/04-fetch-data";
 import MultipleReturnsBasics from "./tutorial/03-conditional-rendering/starter/01-multiple-returns-basics";
 import MultipleReturnsFetchData from "./tutorial/03-conditional-rendering/starter/02-multiple-returns-fetch-data";
 import Example from "./tutorial/03-conditional-rendering/starter/03-hooks-rule";
+import ShortCircuitOverview from "./tutorial/03-conditional-rendering/starter/04-short-circuit-overview";
 
 function App() {
   return (
     <div className='container'>
       {/* <UseStateBasics/> */}
-      <Example/>
+      <ShortCircuitOverview/>
     </div>
   );
 }
