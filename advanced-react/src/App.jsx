@@ -14,12 +14,13 @@ import MultipleReturnsFetchData from "./tutorial/03-conditional-rendering/starte
 import Example from "./tutorial/03-conditional-rendering/starter/03-hooks-rule";
 import ShortCircuitOverview from "./tutorial/03-conditional-rendering/starter/04-short-circuit-overview";
 import ShortCircuitExamples from "./tutorial/03-conditional-rendering/starter/05-short-circuit-examples";
+import ToggleChallenge from "./tutorial/03-conditional-rendering/starter/06-toggle-challenge";
 
 function App() {
   return (
     <div className='container'>
       {/* <UseStateBasics/> */}
-      <ShortCircuitExamples/>
+      <ToggleChallenge/>
     </div>
   );
 }
