@@ -4,18 +4,18 @@ const ToggleChallenge = () => {
   const [alert, setAlert] = useState(false);
 
   
-  const handleClick = ()=>{
-      if(alert){
-        setAlert(false);
-        return;
-      }
-      setAlert(true);
-  }
+  // const handleClick = ()=>{
+  //     if(alert){
+  //       setAlert(false);
+  //       return;
+  //     }
+  //     setAlert(true);
+  // }
 
   return (
     <section>
       <h2>toggle challenge</h2>
-      <button className="btn" onClick={handleClick}>Toggle Alert</button>
+      <button className="btn" onClick={()=> setAlert(!alert)}>Toggle Alert</button>
       {alert && <AlertDisplay/>}
     </section>
   );
