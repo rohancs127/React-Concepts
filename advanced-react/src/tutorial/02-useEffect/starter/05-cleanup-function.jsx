@@ -18,8 +18,13 @@ const CleanupFunction = () => {
 const SecondComponent  = ()=>{
   useEffect(()=>{
     console.log("Hello render");
+    const scrollFunction = ()=>{
+      console.log('scrolled');
+    }
+    window.addEventListener('scroll', scrollFunction())
+    return window.removeEventListener('scroll', scrollFunction())
   },[])
-  return <h1>Hello World!</h1>
+  return <h1 style={{marginBottom:'500px'}}>Hello World!</h1>
 } 
 
 export default CleanupFunction;
