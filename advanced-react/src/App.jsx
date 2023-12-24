@@ -20,12 +20,15 @@
 // import CleanupFunction from "./tutorial/02-useEffect/starter/05-cleanup-function";
 
 import Navbar from "./tutorial/04-project-structure/starter/Navbar";
+import Home from "./tutorial/04-project-structure/starter/pages/Home";
+import About from "./tutorial/04-project-structure/starter/pages/About";
 
 function App() {
   return (
     <div className='container'>
       {/* <UseStateBasics/> */}
-      <Navbar/>
+      <Home/>
+      <About/>
     </div>
   );
 }
