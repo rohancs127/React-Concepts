@@ -17,13 +17,15 @@
 // import ToggleChallenge from "./tutorial/03-conditional-rendering/starter/06-toggle-challenge";
 // import UserChallenge from "./tutorial/03-conditional-rendering/starter/07-user-challenge";
 
-import CleanupFunction from "./tutorial/02-useEffect/starter/05-cleanup-function";
+// import CleanupFunction from "./tutorial/02-useEffect/starter/05-cleanup-function";
+
+import Navbar from "./tutorial/04-project-structure/starter/Navbar/Navbar";
 
 function App() {
   return (
     <div className='container'>
       {/* <UseStateBasics/> */}
-      <CleanupFunction/>
+      <Navbar/>
     </div>
   );
 }
