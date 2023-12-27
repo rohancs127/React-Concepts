@@ -25,12 +25,13 @@
 
 import { Home, About } from './tutorial/04-project-structure/starter/pages';
 
+import Example from './tutorial/04-project-structure/starter/example';
+
 function App() {
   return (
     <div className='container'>
       {/* <UseStateBasics/> */}
-      <Home/>
-      <About/>
+      <Example/>
     </div>
   );
 }
