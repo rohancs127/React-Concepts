@@ -23,15 +23,17 @@
 // import Home from "./tutorial/04-project-structure/starter/pages/Home";
 // import About from "./tutorial/04-project-structure/starter/pages/About";
 
-import { Home, About } from './tutorial/04-project-structure/starter/pages';
+// import { Home, About } from './tutorial/04-project-structure/starter/pages';
 
-import Example from './tutorial/04-project-structure/starter/example';
+// import Example from './tutorial/04-project-structure/starter/example';
+
+import List from "./tutorial/05-leverage-javascript/starter/List";
 
 function App() {
   return (
     <div className='container'>
       {/* <UseStateBasics/> */}
-      <Example/>
+      <List/>
     </div>
   );
 }
