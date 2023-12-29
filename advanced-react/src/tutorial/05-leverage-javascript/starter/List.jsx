@@ -8,7 +8,7 @@ const List = () => {
         <h1>Leverage Javascript</h1>
         <h1>Hello</h1>
         <div>{people.map((person)=>{
-                return <Person/>
+                return <Person key={person.name} {...person}/>
         })}</div>
     </div>
   )

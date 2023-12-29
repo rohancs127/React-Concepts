@@ -1,9 +1,8 @@
 import React from 'react'
 
-const Person = ({}) => {
+
+export function Person({name}){
   return (
-    <div key={person.id}>{person.name}</div>
+    <div>{name}</div>
   )
 }
-
-export default Person
