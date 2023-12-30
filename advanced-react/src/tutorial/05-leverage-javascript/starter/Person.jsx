@@ -3,6 +3,6 @@ import React from 'react'
 
 export function Person({name}){
   return (
-    <div>{name}</div>
+    <h2>{name}</h2>
   )
 }
