@@ -27,13 +27,15 @@
 
 // import Example from './tutorial/04-project-structure/starter/example';
 
-import List from "./tutorial/05-leverage-javascript/starter/List";
+// import List from "./tutorial/05-leverage-javascript/starter/List";
+
+import ControlledInputs from "./tutorial/06-forms/starter/01-controlled-inputs";
 
 function App() {
   return (
     <div className='container'>
       {/* <UseStateBasics/> */}
-      <List/>
+      <ControlledInputs/>
     </div>
   );
 }

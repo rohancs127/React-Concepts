@@ -1,4 +1,10 @@
 const ControlledInputs = () => {
-  return <h2>Controlled Inputs</h2>;
+  return (
+    <section>
+      <form className="form">
+        <h1>Controlled inputs</h1>
+      </form>
+    </section>
+  );
 };
 export default ControlledInputs;
