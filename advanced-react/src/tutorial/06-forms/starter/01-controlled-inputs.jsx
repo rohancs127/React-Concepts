@@ -12,9 +12,13 @@ const ControlledInputs = () => {
     // console.log(event.target.name);
     setEmail(event.target.value);
   }
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+    console.log(name,' ',email, ' has logged in....');
+  }
   return (
     <section>
-      <form className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <h1>Controlled inputs</h1>
         <div className="form-row">
           <label htmlFor="name" className="form-label">Name</label>
