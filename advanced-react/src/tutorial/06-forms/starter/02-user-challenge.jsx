@@ -3,6 +3,8 @@ import {data} from '../../../data'
 
 const UserChallenge = () => {
   const [name, setName] = useState('');
+  const [users, setUsers] = useState(data);
+  console.log(data);
 
   const handleNameChange = (e)=>{
     setName(event.target.value);
@@ -28,6 +30,14 @@ const UserChallenge = () => {
         </button>
       </form>
       {/* render users below */}
+      <h1>User List</h1>
+      {users.map((user)=>{
+        return (
+        <div key={user.id}>
+          <h2>{user.name}</h2>
+        </div>
+        )
+      })}
     </div>
   );
 };
