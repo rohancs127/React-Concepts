@@ -11,8 +11,18 @@ const UserChallenge = () => {
   }
 
   const handleSubmit = (e)=>{
-    e.preventDefault();
-    console.log(name, ' has logged in...');
+    if(!name){
+      alert('Enter name');
+    }
+    else{
+      const id = Date.now();
+      const newUser = {id, name};
+      const newData = [...users, newUser];
+      setUsers(newData);
+      setName('');
+      e.preventDefault();
+      console.log(name, ' has logged in...');
+    }
   }
   return (
     <div>
