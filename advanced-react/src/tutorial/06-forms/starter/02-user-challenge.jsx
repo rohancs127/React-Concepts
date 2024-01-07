@@ -24,6 +24,13 @@ const UserChallenge = () => {
       console.log(name, ' has logged in...');
     }
   }
+
+  const handleClick = (id)=>{
+    const newData = users.filter((person)=>{
+      return (person.id!==id)
+    });
+    setUsers(newData);
+  }
   return (
     <div>
       <form className='form' onSubmit={handleSubmit}>
@@ -45,6 +52,7 @@ const UserChallenge = () => {
         return (
         <div key={user.id}>
           <h2>{user.name}</h2>
+          <button onClick={handleClick(user.id)} className="btn">Remove</button>
         </div>
         )
       })}
