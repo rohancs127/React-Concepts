@@ -11,6 +11,7 @@ const UserChallenge = () => {
   }
 
   const handleSubmit = (e)=>{
+    e.preventDefault();
     if(!name){
       alert('Enter name');
     }
@@ -20,15 +21,13 @@ const UserChallenge = () => {
       const newData = [...users, newUser];
       setUsers(newData);
       setName('');
-      e.preventDefault();
       console.log(name, ' has logged in...');
     }
   }
 
-  const handleClick = (id)=>{
-    const newData = users.filter((person)=>{
-      return (person.id!==id)
-    });
+  const removeUser = (id) =>{
+    console.log('hello');
+    const newData = users.filter((person)=> person.id!==id);
     setUsers(newData);
   }
   return (
@@ -52,7 +51,7 @@ const UserChallenge = () => {
         return (
         <div key={user.id}>
           <h2>{user.name}</h2>
-          <button onClick={handleClick(user.id)} className="btn">Remove</button>
+          <button onClick={()=> removeUser(user.id)} className="btn">Remove</button>
         </div>
         )
       })}
