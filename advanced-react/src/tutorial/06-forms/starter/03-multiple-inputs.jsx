@@ -5,6 +5,11 @@ const MultipleInputs = () => {
     email: '',
     password: ''
   });
+
+  const handleChange = (e)=>{
+    console.log(e.target.name);
+    
+  }
   return (
     <div>
       <form className='form'>
@@ -14,21 +19,21 @@ const MultipleInputs = () => {
           <label htmlFor='name' className='form-label'>
             name
           </label>
-          <input type='text' className='form-input' id='name' value={user.name}/>
+          <input type='text' className='form-input' id='name' value={info.name} onChange={handleChange} name="name"/>
         </div>
         {/* email */}
         <div className='form-row'>
           <label htmlFor='email' className='form-label'>
             Email
           </label>
-          <input type='email' className='form-input' id='email' value={user.email}/>
+          <input type='email' className='form-input' id='email' value={info.email} onChange={handleChange} name="email"/>
         </div>
         {/* email */}
         <div className='form-row'>
           <label htmlFor='password' className='form-label'>
             Password
           </label>
-          <input type='password' className='form-input' id='password' value={user.password}/>
+          <input type='password' className='form-input' id='password' value={info.password} onChange={handleChange} name="password"/>
         </div>
 
         <button type='submit' className='btn btn-block'>
