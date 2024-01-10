@@ -29,14 +29,15 @@
 
 // import List from "./tutorial/05-leverage-javascript/starter/List";
 
-import ControlledInputs from "./tutorial/06-forms/starter/01-controlled-inputs";
-import UserChallenge from "./tutorial/06-forms/starter/02-user-challenge";
+// import ControlledInputs from "./tutorial/06-forms/starter/01-controlled-inputs";
+// import UserChallenge from "./tutorial/06-forms/starter/02-user-challenge";
+import MultipleInputs from "./tutorial/06-forms/starter/03-multiple-inputs";
 
 function App() {
   return (
     <div className='container'>
       {/* <UseStateBasics/> */}
-      <UserChallenge/>
+      <MultipleInputs/>
     </div>
   );
 }
