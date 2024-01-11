@@ -7,6 +7,7 @@ const MultipleInputs = () => {
   });
 
   const handleChange = (e)=>{
+    console.log("Entered ", e.target.name, " as ", e.target.value);
     console.log(e.target.name);
     
   }
