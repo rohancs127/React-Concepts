@@ -11,9 +11,13 @@ const MultipleInputs = () => {
     setInfo({...info, [event.target.name]: event.target.value});
     // console.log("Entered ", e.target.name, " as ", e.target.value);
   }
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+    console.log(info);
+  }
   return (
     <div>
-      <form className='form'>
+      <form className='form' onSubmit={handleSubmit}>
         <h4>Multiple Inputs</h4>
         {/* name */}
         <div className='form-row'>
