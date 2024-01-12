@@ -7,9 +7,9 @@ const MultipleInputs = () => {
   });
 
   const handleChange = (e)=>{
-    console.log("Entered ", e.target.name, " as ", e.target.value);
-    console.log(e.target.name);
-    
+    // console.log(e.target.name);
+    setInfo({...info, [event.target.name]: event.target.value});
+    // console.log("Entered ", e.target.name, " as ", e.target.value);
   }
   return (
     <div>
