@@ -2,6 +2,10 @@ import { useState } from 'react';
 const frameworks = ['react', 'angular', 'vue', 'svelte'];
 const OtherInputs = () => {
   const [ship, setShip] = useState(false);
+  const handleShipping = (e)=>{
+    console.log(e.target.checked);
+    setShip(e.target.checked);
+  }
   return (
     <div>
       <form className='form'>
@@ -9,7 +13,7 @@ const OtherInputs = () => {
         {/* name */}
         <div className='form-row' style={{ textAlign: 'left' }}>
           <label htmlFor='shipping'> Free Shipping </label>
-          <input type='checkbox' name='shipping' id='shipping'/>
+          <input type='checkbox' name='shipping' id='shipping' checked={ship} onChange={handleShipping}/>
         </div>
         <div className='form-row' style={{ textAlign: 'left' }}>
           <label htmlFor='framework' className='form-label'>
