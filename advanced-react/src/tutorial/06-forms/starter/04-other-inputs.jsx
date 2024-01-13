@@ -2,10 +2,17 @@ import { useState } from 'react';
 const frameworks = ['react', 'angular', 'vue', 'svelte'];
 const OtherInputs = () => {
   const [ship, setShip] = useState(false);
+  const [framework, setFramework] = useState('react'); //any
+
   const handleShipping = (e)=>{
     console.log(e.target.checked);
     setShip(e.target.checked);
   }
+
+  const handleFramework = (e)=>{
+   
+  }
+
   return (
     <div>
       <form className='form'>
