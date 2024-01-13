@@ -31,13 +31,14 @@
 
 // import ControlledInputs from "./tutorial/06-forms/starter/01-controlled-inputs";
 // import UserChallenge from "./tutorial/06-forms/starter/02-user-challenge";
-import MultipleInputs from "./tutorial/06-forms/starter/03-multiple-inputs";
+// import MultipleInputs from "./tutorial/06-forms/starter/03-multiple-inputs";
+import OtherInputs from "./tutorial/06-forms/starter/04-other-inputs";
 
 function App() {
   return (
     <div className='container'>
       {/* <UseStateBasics/> */}
-      <MultipleInputs/>
+      <OtherInputs/>
     </div>
   );
 }
