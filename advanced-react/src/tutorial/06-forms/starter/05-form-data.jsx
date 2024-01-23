@@ -9,6 +9,7 @@ const UncontrolledInputs = () => {
     // console.log(formData);
     // const password = formData.get('password');
     // console.log(password);
+    console.log([...formData.entries()]);
   };
   return (
     <div>
