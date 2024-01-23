@@ -6,7 +6,9 @@ const UncontrolledInputs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget)
-    console.log(formData);
+    // console.log(formData);
+    // const password = formData.get('password');
+    // console.log(password);
   };
   return (
     <div>
