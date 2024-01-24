@@ -33,13 +33,15 @@
 // import UserChallenge from "./tutorial/06-forms/starter/02-user-challenge";
 // import MultipleInputs from "./tutorial/06-forms/starter/03-multiple-inputs";
 // import OtherInputs from "./tutorial/06-forms/starter/04-other-inputs";
-import UncontrolledInputs from "./tutorial/06-forms/starter/05-form-data";
+// import UncontrolledInputs from "./tutorial/06-forms/starter/05-form-data";
+
+import UseRefBasics from "./tutorial/07-useRef/starter/01-useRef-basics";
 
 function App() {
   return (
     <div className='container'>
       {/* <UseStateBasics/> */}
-      <UncontrolledInputs/>
+      <UseRefBasics/>
     </div>
   );
 }
