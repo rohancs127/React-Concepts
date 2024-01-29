@@ -7,3 +7,5 @@ const useToggle = (defaultValue)=> {
   };
   return [show, toggle];
 }
+
+export default useToggle;
