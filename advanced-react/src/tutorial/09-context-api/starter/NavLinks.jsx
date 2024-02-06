@@ -1,8 +1,17 @@
 import React from 'react'
+import UserContainer from './UserContainer'
 
-function NavLinks() {
+function NavLinks(user, logout) {
   return (
-    <section>NavLinks</section>
+    <section>
+      <div className='nav-container'>
+          <ul className='nav-links'>
+            <li><a href='#'>Home</a></li>
+            <li><a href='#'>About</a></li>
+          </ul>
+          <UserContainer user={user} logout={logout}/>
+      </div>
+    </section>
   )
 }
 

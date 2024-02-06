@@ -1,6 +1,6 @@
 import React from 'react'
 
-function UserContainer() {
+function UserContainer(user, logout) {
   return (
     <section>UserContainer</section>
   )
