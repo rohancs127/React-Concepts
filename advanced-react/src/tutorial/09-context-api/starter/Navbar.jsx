@@ -4,6 +4,7 @@ import NavLinks from './NavLinks';
 const Navbar = ()=> {
 
   const [user, setUser] = useState({name: 'Bob'})
+  
   const logout = ()=>{
     setUser(null)
   }

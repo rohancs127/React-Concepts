@@ -1,8 +1,14 @@
 import React from 'react'
 
 function UserContainer(user, logout) {
+  console.log(user);
   return (
-    <section>UserContainer</section>
+    <section>
+      <div className='user-container'>
+        <p>Hello There! {user.name}</p>
+        <button className='btn' onClick={logout}>Logout</button>
+      </div>
+    </section>
   )
 }
 
