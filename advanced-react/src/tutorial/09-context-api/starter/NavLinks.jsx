@@ -1,7 +1,7 @@
 import React from 'react'
 import UserContainer from './UserContainer'
 
-function NavLinks(user, logout) {
+function NavLinks({user, logout}) {
   return (
     <section>
       <div className='nav-container'>

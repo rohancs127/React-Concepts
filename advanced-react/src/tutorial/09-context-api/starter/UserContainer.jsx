@@ -1,7 +1,6 @@
 import React from 'react'
 
-function UserContainer(user, logout) {
-  console.log(user);
+function UserContainer({user, logout}) {
   return (
     <section>
       <div className='user-container'>
