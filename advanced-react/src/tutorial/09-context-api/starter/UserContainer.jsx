@@ -4,7 +4,9 @@ function UserContainer({user, logout}) {
   return (
     <section>
       <div className='user-container'>
-        <p>Hello There! {user.name}</p>
+        {/* <p>Hello There! {user.name}</p> */}
+        <p>Hello There! {user?.name}</p>
+
         <button className='btn' onClick={logout}>Logout</button>
       </div>
     </section>
