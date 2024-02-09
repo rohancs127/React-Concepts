@@ -13,7 +13,10 @@ function UserContainer({user, logout}) {
               <button className='btn' onClick={logout}>Logout</button>
             </>
           ) : (
-            <p>Please login</p>
+            <>
+              <p>Please login</p>
+              <button className='btn'>Login</button>
+            </>
           )
         }
       </div>
