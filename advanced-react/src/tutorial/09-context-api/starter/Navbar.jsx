@@ -12,7 +12,7 @@ const Navbar = ()=> {
     <section>
       <nav className='navbar'>
         <h5>CONTEXT API</h5>
-        <NavLinks user={user} logout={logout}/>
+        <NavLinks/>
       </nav>
     </section>
   )
