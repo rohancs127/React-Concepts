@@ -1,6 +1,8 @@
 import React from 'react'
+import { useContext } from 'react';
+import { NavbarContext } from './Navbar';
 
-function UserContainer({user, logout}) {
+function UserContainer() {
   return (
     <section>
       <div className='user-container'>  
