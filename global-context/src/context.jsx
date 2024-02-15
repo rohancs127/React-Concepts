@@ -2,11 +2,13 @@ import { createContext, useState } from "react";
 
 const GlobalContext = createContext();
 
-const AppContext = ()=>{
+const AppContext = (props)=>{
 
     const [name, setName] = useState("Rohan")
 
-    return <GlobalContext.Provider value={{name, setName}}></GlobalContext.Provider>
+    return <GlobalContext.Provider value={{name, setName}}>
+        {props.children}
+    </GlobalContext.Provider>
 
 };
 
