@@ -1,5 +1,6 @@
 import React from 'react';
 import { data } from '../../../data';
+
 const ReducerBasics = () => {
   const [people, setPeople] = React.useState(data);
 
@@ -7,6 +8,8 @@ const ReducerBasics = () => {
     let newPeople = people.filter((person) => person.id !== id);
     setPeople(newPeople);
   };
+
+
   return (
     <div>
       {people.map((person) => {
@@ -24,6 +27,14 @@ const ReducerBasics = () => {
         onClick={() => setPeople([])}
       >
         clear items
+      </button>
+
+      <button
+        className='btn'
+        style={{ marginTop: '2rem', marginLeft:'2rem' }}
+        onClick={()=> setPeople(data)}
+      >
+        Reset
       </button>
     </div>
   );
